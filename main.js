@@ -22,7 +22,7 @@ function getRow(firstRow, secondRow, letter) {
     }
 }
 
-// Інтерактивна частина для Завдання 1
+// Завдання 1 *
 const firstRow = prompt('Enter the first row: ', 'Slow and steady wins the race');
 const secondRow = prompt('Enter the second row: ', 'You can say that again');
 const letter = prompt('Enter the letter to count: ', 'a');
@@ -30,7 +30,7 @@ alert(`The row with more letters '${letter}': ${getRow(firstRow, secondRow, lett
 
 // Завдання 2: Форматування номера телефону
 function formattedPhone(phone) {
-    let cleanedPhone = phone.replace(/[^\d]/g, ''); // Видаляємо все крім цифр
+    let cleanedPhone = phone.replace(/[^\d]/g, ''); 
 
     if (cleanedPhone.length === 10) {
         cleanedPhone = '38' + cleanedPhone;
@@ -45,6 +45,6 @@ function formattedPhone(phone) {
     return `+${cleanedPhone.slice(0, 2)} (${cleanedPhone.slice(2, 5)}) ${cleanedPhone.slice(5, 8)}-${cleanedPhone.slice(8, 10)}-${cleanedPhone.slice(10)}`;
 }
 
-// Інтерактивна частина для Завдання 2
+// Завдання 2 *
 const phone = prompt('Enter the phone number: ', '+380664567890');
 alert(`Formatted phone: ${formattedPhone(phone)}`);
